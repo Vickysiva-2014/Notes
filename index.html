@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Notes App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="sidebar">
+    <div class="header">
+  <img src="logo.png" alt="Logo" class="logo">
+  <h2>My Notes</h2>
+</div>
+    <button class="nav-btn" onclick="showCreate()">Create Notes</button>
+    <button class="nav-btn" onclick="showList()">List Notes</button>
+    <img src="logo1.png" alt="Logo" class="logo-bottom">
+  </div>
+  
+
+  <div class="main">
+    <div class="placeholder" id="placeholder">
+      <img src="notes.png" alt="Notes Image" />
+      <p>You don’t have any notes yet. Start by creating one.</p>
+    </div>
+
+    <div class="note-form" id="noteForm">
+      <h2>Create a Notes</h2>
+      <hr class="styled-hr">
+      <input type="text" id="title" placeholder="Notes Title" />
+      <textarea id="body" rows="5" placeholder="Notes Description"></textarea>
+      <button onclick="addNote()">Add Note</button>
+    </div>
+
+    <div class="note-list" id="noteList"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
